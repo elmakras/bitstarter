@@ -1,115 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hangouts!</title>
+    <title>Bootstrap 101 Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
-    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
-    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
-    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
-    
-    
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/style.css" rel="stylesheet" media="screen">
     <style type="text/css">
         html { height: 100% }
         body { height: 100%; margin: 0; padding: 0 }
         #map-canvas { height: 100% }
         .map { height: 500px; width: 500px;}
-	/* Large Desktop */
-@media (min-wdith: 980px) {
-    body {
-        padding-top: 60px;
-    }
-    .linediv-l {
-        border-right: 1px white solid;
-    }
-    .linediv-r {
-        border-left: 1px white solid;
-    }
-}
-
-/* Landscape phone and down */
-@media (max-width: 480px) {
-    .copy {
-        padding: 2.5% 10%;
-    }
-    .linediv-l {
-        border-bottom: 1px white solid;
-    }
-    .linediv-r {
-        border-top: 1px white solid;
-    }
-}
-
-body{
-    font-family: 'Open Sans',  Helvetica, Arial, sans-serif;
-}
-.heading, .subheading {
-    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-    text-align: center;
-}
-p.lead {
-    padding-top: 1.5%;
-    font-size: 24px;
-    line-height: 30px;
-}
-p {
-    font-size: 18px;
-    line-height: 24px;
-}
-
-.pitch {
-    padding: 2.5% 0%;
-}
-.order {
-    padding: 2% 0%;
-}
-.actions {
-    background-color: #343434;
-    padding: 3% 0%;
-}
-.video, .thermometer, .order, .social, .statistics {
-    text-align: center;
-}
-.statistics h3, .statistics p {
-    color: white;
-}
-
-.copy {
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
-    text-align: justify;
-}
-.asset {
-    padding: 2.5% 0%;
-}
-.footer{
-    color: #cccccc;
-    text-align: center;
-}
-.footer p {
-    font-size: 11px;
-}
-.footer a {
-    color: #ccccff;
-}
-br {
-    line-height: 36px;
-}
-.feed-entry{
-    margin: 1%;
-    padding: 8px;
-    border: solid 1px #C5C5C5;
-    border-radius: 7px;
-    background-color: #CBEDF7;
-}
-.feed-entry:hover {
-    background-color: #DCFEF8;
-
-}
     </style>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -160,21 +61,6 @@ br {
                     });
                      **/
                     //works. best so far
-
-                    var markerBack = new google.maps.Marker({
-                        position: pos,
-                        icon: {
-                            path: google.maps.SymbolPath.CIRCLE,
-                            scale: 30,
-                            strokeColor: '#FF0000',
-                            strokeOpacity: 0.5,
-                            strokeWeight: 2,
-                            fillColor: '#FF0000',
-                            fillOpacity: 0.15
-                        },
-                        map: map,
-                        title: 'Me!'
-                    });
 
                     var marker = new google.maps.Marker({
                         position: pos,
@@ -254,7 +140,7 @@ br {
             <a class="brand" hreef="#">Hangouts</a>
             <div class="nav-collapse collapse">
                 <ul class="nav">
-                    <li class="active"><a href="/">Home</a></li>
+                    <li class="active"><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
 		    <li><a href="/sample.html">Sample</a></li>
